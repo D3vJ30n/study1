@@ -1,6 +1,6 @@
 # Problem Solver D3v J30n
 
-## 위대한 프론트엔드 개발자로 가는 길
+## 프론트엔드 개발자로 가는 길
 
 ![89122280 2](https://github.com/D3vJ30n/study1/assets/171364523/84eee151-de49-4d3b-9ed1-b94a735b1ee7)
 
