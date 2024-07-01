@@ -1,4 +1,4 @@
-# Problem Solver D3v J30n
+# Problem Solver
 
 ## 프론트엔드 개발자로 가는 길
 
