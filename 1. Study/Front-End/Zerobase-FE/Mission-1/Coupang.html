@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 발견</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        width: 960px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+      }
+      .title h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+      .title p {
+        color: #888;
+        margin: 0;
+        margin-left: 10px;
+      }
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .grid-item {
+        background-color: #fff;
+        border: 1px solid #eee;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+      .grid-item.large {
+        width: 468px;
+        height: 299px;
+      }
+      .grid-item.medium {
+        width: 228px;
+        height: 299px;
+      }
+      .grid-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .grid-item img {
+        width: 100%;
+        height: auto;
+      }
+      .grid-item h2 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #333;
+        padding: 0 10px;
+      }
+      .grid-item .button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #0073e6;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .grid-item .button:hover {
+        background-color: #005bb5;
+      }
+      @media (max-width: 960px) {
+        .container {
+          width: 100%;
+          padding: 10px;
+        }
+        .grid-item.large,
+        .grid-item.medium {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>오늘의 발견</h1>
+        <p>｜오늘 쿠팡이 엄선한 가장 HOT한 상품!</p>
+      </div>
+      <div class="grid">
+        <div class="grid-item large">
+          <img src="path/to/ottogi.png" alt="오뚜기 따뜻한 차 향기" />
+          <h2>오뚜기 따뜻한 차 향기</h2>
+        </div>
+        <div class="grid-item large">
+          <img src="path/to/vaseline.png" alt="바세린 런칭 기념" />
+          <h2>바세린 런칭 기념</h2>
+          <a href="#" class="button">구매하기</a>
+        </div>
+        <div class="grid-item medium">
+          <img src="path/to/kamill.png" alt="핸드크림 모음" />
+          <h2>핸드크림 모음</h2>
+          <a href="#" class="button">구매하기</a>
+        </div>
+        <div class="grid-item medium">
+          <img src="path/to/bibs.png" alt="빕스 아기사항" />
+          <h2>빕스 아기사항</h2>
+        </div>
+        <div class="grid-item medium">
+          <img src="path/to/hanssem.png" alt="한샘 수납장 모음" />
+          <h2>한샘 수납장 모음</h2>
+        </div>
+        <div class="grid-item medium">
+          <img src="path/to/dongwon.png" alt="개성 왕만두" />
+          <h2>개성 왕만두</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
