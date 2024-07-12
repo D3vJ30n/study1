@@ -88,6 +88,16 @@ body {
   height: 100%;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
+}
+
+.top-left span:nth-of-type(1):hover {
+  color: red;
+}
+
+.top-left span:nth-of-type(1) {
+  position: relative;
+  display: inline-block;
 }
 
 .top-center {
@@ -149,4 +159,9 @@ li {
   height: 7px;
   background-color: blue;
   border-radius: 50%;
+}
+
+#fill-heart {
+  display: none;
+  fill: red;
 }

@@ -43,7 +43,6 @@ header {
   border: 2px solid #eee;
   overflow: hidden;
   height: 299px;
-  transition: transform 0.3s, border-color 0.3s;
 }
 
 .small-cards-container {
@@ -109,7 +108,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;
-  transition: opacity 0.3s ease;
 }
 
 .product-link::before {
@@ -126,7 +124,6 @@ header {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .product-link:hover::before,
@@ -141,7 +138,6 @@ header {
 
 .discovery h2 {
   font-size: 24px;
-  color: #333;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -149,7 +145,6 @@ header {
 
 .discovery h2 p {
   font-size: 14px;
-  color: #666;
   margin-left: 8px;
   font-weight: normal;
 }
