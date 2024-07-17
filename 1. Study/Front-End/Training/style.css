@@ -1,80 +1,88 @@
-* {
-  box-sizing: border-box;
-}
-
-html,
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: none;
+header {
+  border-bottom: 1px solid #ddd;
 }
 
-.container {
-  background-color: rgb(0, 174, 255);
-  max-width: 768px;
-  margin: 0 auto;
-  min-height: 100vh;
-
+.top-bar {
   display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  font-size: 14px;
 }
 
-.box {
-  border: 3x solid orangered;
+.top-bar a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
 }
 
-nav {
-  background-color: orangered;
+.main-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  margin-right: 20px;
+  cursor: pointer; /* 커서가 포인터로 변경되도록 추가 */
+}
+
+.menu-icon:hover {
+  color: #ff5722; /* hover 시 색상 변경 */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5722;
+  margin-right: 20px;
+}
+
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.search-bar select,
+.search-bar input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ff5722;
   color: white;
-  /* width: 120px; */
-  flex-basis: 120px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.box-container {
-  background-color: white;
-  /* width: 100%; */
-  flex-grow: 1;
-  font-size: 30px;
+.user-icons a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
 
+.sub-links {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #f8f8f8;
 }
 
-.box {
-  background-color: wheat;
-  border: 3px solid rgb(44, 24, 44);
-  border-radius: 9px;
-
-  /* width: 50%; */
-  min-height: 150px;
-  flex-grow: 1;
-  flex-basis: 50%;
-  /* flex-basis: 100%; */
-}
-
-.box:nth-child(2n) {
-  border-color: rgb(39, 39, 129);
-}
-
-footer {
-  background-color: rgb(170, 255, 170);
-  border: 3px solid green;
-  min-height: 50px;
-
-  flex-grow: 1;
-  flex-basis: 100%;
-}
-
-@media screen (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .box-container {
-    flex-direction: column;
-  }
+.sub-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
 }
