@@ -260,6 +260,32 @@ a {
   padding-left: 20px;
 }
 
+/* 첫 번째 섹션 태그 스타일 */
+.recommended-products:not(.second-section) .hot-keywords .tags a {
+  color: var(--color-brown-300);
+  border-color: var(--color-brown-300);
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+/* 첫 번째 섹션 태그 호버 효과 */
+.recommended-products:not(.second-section) .hot-keywords .tags a:hover {
+  background-color: var(--color-brown-300);
+  color: white;
+}
+
+/* 두 번째 섹션 태그 스타일 (기존 스타일) */
+.second-section .hot-keywords .tags a {
+  color: var(--color-blue-600);
+  border-color: var(--color-blue-600);
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+/* 두 번째 섹션 태그 호버 효과 (기존 스타일) */
+.second-section .hot-keywords .tags a:hover {
+  background-color: var(--color-blue-600);
+  color: white;
+}
+
 .category-title.houseware {
   color: var(--color-brown-300);
 }
@@ -268,6 +294,21 @@ a {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 0px;
+}
+
+.category-title.kitchenware {
+  color: var(--color-blue-600); /* 쿠팡 로고의 파란색으로 변경 */
+}
+
+.second-section .hot-keywords .tags a {
+  color: var(--color-blue-600); /* 쿠팡 로고의 파란색으로 변경 */
+  border-color: var(--color-blue-600); /* 테두리 색상도 함께 변경 */
+}
+
+/* 호버 효과 */
+.second-section .hot-keywords .tags a:hover {
+  background-color: var(--color-blue-600);
+  color: white;
 }
 
 .category-link {
@@ -382,4 +423,74 @@ a {
 #slide-1:checked ~ .product-info .content-1,
 #slide-2:checked ~ .product-info .content-2 {
   display: flex;
+}
+
+/* 새로운 섹션 내부 요소들의 스타일 재정의 */
+.second-section .container {
+  border-top: 1px solid var(--color-gray-300);
+}
+
+.second-section .left-column,
+.second-section .center-column,
+.second-section .right-column {
+  border-top: none;
+}
+
+/* 두 번째 섹션의 캐러셀 컨트롤 */
+#slide-3:checked ~ .carousel-inner {
+  transform: translateX(0);
+}
+
+#slide-4:checked ~ .carousel-inner {
+  transform: translateX(-50%);
+}
+
+#slide-3:checked ~ .carousel-nav .carousel-btn:nth-child(1),
+#slide-4:checked ~ .carousel-nav .carousel-btn:nth-child(2) {
+  background-color: white;
+}
+
+#slide-3:checked ~ .product-info .content-1,
+#slide-4:checked ~ .product-info .content-2 {
+  display: flex;
+}
+
+/* 두 번째 섹션의 product-info 박스 스타일 */
+.second-section .product-info {
+  background-color: var(--color-blue-400); /* 쿠팡 로고의 파란색 계열로 변경 */
+}
+
+/* 텍스트 색상도 변경하고 싶다면 다음 스타일 추가 */
+.second-section .product-info h4,
+.second-section .product-info p {
+  color: var(--color-white); /* 또는 다른 원하는 색상 */
+}
+
+.product-item .instant-discount {
+  font-size: 11px;
+  color: var(--color-red-500);
+  display: block;
+  margin-top: 5px;
+}
+
+.product-item .sale-price {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 2px;
+}
+
+.product-item .price-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.product-item .rocket-delivery-icon {
+  width: 54px;
+  height: 14px;
+  position: absolute;
+  left: calc(100% + -50px);
+  top: -105%;
+  transform: translateY(-50%);
 }
