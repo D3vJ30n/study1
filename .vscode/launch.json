@@ -5,6 +5,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "IoTDemo",
+      "request": "launch",
+      "mainClass": "Org.Opentutorial.Iot.IoTDemo",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "HelloWorldApp",
+      "request": "launch",
+      "mainClass": "HelloWorldApp",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
       "name": "Python 디버거: 현재 파일",
       "type": "debugpy",
       "request": "launch",
