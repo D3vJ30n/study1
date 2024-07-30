@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PracticeProject",
+      "request": "launch",
+      "mainClass": "PracticeProject",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "Practice",
+      "request": "launch",
+      "mainClass": "Practice",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
       "name": "IoTDemo",
       "request": "launch",
       "mainClass": "Org.Opentutorial.Iot.IoTDemo",

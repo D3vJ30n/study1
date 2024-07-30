@@ -25,10 +25,14 @@ public class HelloWorldGUIApp {
 
         // 레이블 생성 및 추가
         JLabel label = new JLabel("Hello, World!", SwingConstants.CENTER);
-        frame.getContentPane().add(label);
+        frame
+            .getContentPane()
+            .add(label);
 
         // 화면 중앙에 프레임 위치 설정
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        Dimension screenSize = Toolkit
+            .getDefaultToolkit()
+            .getScreenSize();
         int x = (screenSize.width - 800) / 2;
         int y = (screenSize.height - 300) / 2;
         frame.setLocation(x, y);
