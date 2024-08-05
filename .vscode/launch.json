@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MultiplicationTable",
+      "request": "launch",
+      "mainClass": "MultiplicationTable",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "JavaPractice01",
+      "request": "launch",
+      "mainClass": "JavaPractice01",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
       "name": "testjava",
       "request": "launch",
       "mainClass": "testjava",
