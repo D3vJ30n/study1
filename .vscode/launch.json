@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "KoreanResidentialNumber",
+      "request": "launch",
+      "mainClass": "KoreanResidentialNumber",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "ResidentNumberGenerator",
+      "request": "launch",
+      "mainClass": "ResidentNumberGenerator",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "EntranceFeeCalculator",
+      "request": "launch",
+      "mainClass": "EntranceFeeCalculator",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "LotteWorld",
+      "request": "launch",
+      "mainClass": "LotteWorld",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "CashbackCalculator",
+      "request": "launch",
+      "mainClass": "CashbackCalculator",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
       "name": "MultiplicationTable",
       "request": "launch",
       "mainClass": "MultiplicationTable",
