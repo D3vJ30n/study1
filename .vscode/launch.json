@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Basic_02_2",
+      "request": "launch",
+      "mainClass": "Basic_02_2",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "Basic_02_1",
+      "request": "launch",
+      "mainClass": "Basic_02_1",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
+      "name": "Basic_02_1",
+      "request": "launch",
+      "mainClass": "Study.Solution.Basic_02_1",
+      "projectName": "Work_3bf3a97c"
+    },
+    {
+      "type": "java",
       "name": "KoreanResidentialNumber",
       "request": "launch",
       "mainClass": "KoreanResidentialNumber",
