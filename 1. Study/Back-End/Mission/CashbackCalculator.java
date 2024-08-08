@@ -10,7 +10,7 @@ public class CashbackCalculator {
     Scanner scanner = new Scanner(System.in);
 
     // 프로그램 제목 출력
-    System.out.println("[캐시백 계산]");
+		System.out.println("[캐시백 계산]");
     
     // 사용자에게 결제 금액 입력 요청
     System.out.print("결제 금액을 입력해 주세요.(금액):");
@@ -45,16 +45,16 @@ public class CashbackCalculator {
     } else if (paymentAmount < 3000) {
       // 1000원 이상 3000원 미만일 경우 100원 캐시백
       cashback = 100;
-    } else {
-      // 3000원 이상일 경우 결제 금액의 10%를 캐시백으로 계산
-      cashback = (int) (paymentAmount * 0.1);
-      // 캐시백 금액을 100원 단위로 반올림
-      // Math.round()로 반올림 후 100을 곱하여 100원 단위로 조정
-      cashback = (int) (Math.round(cashback / 100.0) * 100);
-      // 최대 캐시백 금액을 300원으로 제한
-      // Math.min()을 사용하여 캐시백과 300 중 작은 값 선택
-      cashback = Math.min(cashback, 300);
-    }
+		} else {
+			// 3000원 이상일 경우 결제 금액의 10%를 캐시백으로 계산
+			cashback = (int) (paymentAmount * 0.1);
+			// 캐시백 금액을 100원 단위로 반올림
+			// Math.round()로 반올림 후 100을 곱하여 100원 단위로 조정
+			cashback = (int) (Math.round(cashback / 100.0) * 100);
+			// 최대 캐시백 금액을 300원으로 제한
+			// Math.min()을 사용하여 캐시백과 300 중 작은 값 선택
+			cashback = Math.min(cashback, 300);
+		}
 
     return cashback; // 계산된 캐시백 금액 반환
   }

@@ -15,7 +15,7 @@ public class Basic_02_2 {
     int intNum3 = Integer.MAX_VALUE + 1;
     System.out.println("intNum3 = " + intNum3);
     long longNum = (long) Integer.MAX_VALUE + 1;
-    System.out.println("longNum = " + longNum);
+		System.out.println("longNum = " + longNum);
 
 //      1-2. 실수
     float floatNum = 1.123f;
@@ -33,12 +33,12 @@ public class Basic_02_2 {
 
     System.out.println("0b" + Integer.toBinaryString(numBase2));
     System.out.println("0" + Integer.toOctalString(numBase8));
-    System.out.println("0x" + Integer.toHexString(numBase16));
+		System.out.println("0x" + Integer.toHexString(numBase16));
 
 //      2. 자료형 - 부울
     System.out.println("== 부울 ==");
     boolean isPass = true;
-    boolean isOk = false;
+		boolean isOk = false;
 
     System.out.println(isPass);
     System.out.println(isOk);
@@ -47,7 +47,7 @@ public class Basic_02_2 {
 //      3. 자료형 - 문자
     System.out.println("== 문자 ==");
     char keyFirst = 'a';
-    char keyLast = 'z';
+		char keyLast = 'z';
 
     System.out.println(keyFirst);
     System.out.println((int) keyFirst);
